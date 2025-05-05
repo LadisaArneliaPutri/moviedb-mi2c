@@ -1,3 +1,3 @@
-Nama   : Ladisa Arnelia Putri
-NIM    : 2301091011
-Kelas  : MI2C
+<p>Nama   : Ladisa Arnelia Putri</p>
+<p>NIM    : 2301091011</p>
+<p>Kelas  : MI2C</P>
