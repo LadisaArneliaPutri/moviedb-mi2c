@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class CategorySeeder extends Seeder
 {
@@ -14,11 +15,11 @@ class CategorySeeder extends Seeder
      */
     public function run(): void 
 {
-    DB ::table('categories')->insert([
+    DB::table('categories')->insert([
         [
             'category_name' => 'Action',
             'description' => 'Film dengan adegan-adegan dengan penuh aksi dan ketegangan.',
-            'created_at' => now(),
+             'created_at' => now(),
             'updated_at' => now(),    
         ],
         [
