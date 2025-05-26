@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 
@@ -20,6 +21,11 @@ class MovieController extends Controller
         return view('detail', compact('movie'));
     }
 
+    public function create()
+    {
+        $categories = Category::all();
+        return view('create_movie', compact('categorie'));
+    }
 
 
 
