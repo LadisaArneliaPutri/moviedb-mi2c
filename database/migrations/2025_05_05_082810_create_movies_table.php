@@ -8,30 +8,26 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->string('slug');
             $table->text('synopsis')->nullable();
-            $table->foreignid('category_id')->constrained();
+            $table->foreignId('category_id')->constrained();
             $table->year('year');
-            $table->text('actors')->nullable();
-            $table->string('cover_image')->nullable();
+            $table->text('actors')->nullabel();
+            $table->string('cover_image')->nullabel();
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('movies');
     }
